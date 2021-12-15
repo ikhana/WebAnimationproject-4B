@@ -29,4 +29,4 @@ jobs:
     - name: Install Surge
       run: npm install -g surge 
     - name:  Run surge
-      run: surge ./ WebAnimation4B.surge.sh --token ${{ secrets.WEBANIMATION4B }}
+      run: surge ./ build WebAnimation4B.surge.sh --token ${{ secrets.WEBANIMATION4B }}
