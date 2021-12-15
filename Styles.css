@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-image: linear-gradient(to top, #a8caba 0%, #5d4157 100%);
+    overflow-y: hidden;
 }
 
 .night{
@@ -26,20 +27,22 @@ body{
     bottom: 0%;
     left: 0%;
     background-repeat: repeat-x;
+    animation: moveRight 6s linear infinite;
    
 }
 .car{
     position: absolute;
     bottom: 0%;
     left: 25%;
+    
    
 
 }
 
-
+ 
 @keyframes moveRight{
 
-    100%{transform: translateX(-3000px);}
+    100%{transform: translateX(-2950px);}
 }
 
 @keyframes suspension{
@@ -49,7 +52,7 @@ body{
     0%{transform: translateY(-1px);}
 }
 .moveRight{
-    animation: moveRight 6s linear infinite;
+    animation:  6s linear infinite;
 }
 .suspension{
     animation: suspension 1s linear infinite;
