@@ -16,7 +16,7 @@ $(document).ready(function(){
     })
     $(document).on('keypress',function(e){
         
-        if(e.which == 32){
+        if(e.which == 119){
             if(light){
                 light=false;
                 $img.attr("src",cars[0]);
